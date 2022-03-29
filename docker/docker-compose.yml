@@ -22,6 +22,9 @@ services:
         networks:
             - frontend-network
             - backend-network
+        ports:
+            - 8080:8080
+
     okr-db:
         image: 'postgres:9.6.16'
         container_name: 'burning-okr-postgres'
